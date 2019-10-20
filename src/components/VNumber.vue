@@ -1,12 +1,20 @@
 <template>
   <div class='v-number'>
     <transition name='v-number-current-value'>
-      <div class='v-number__animated v-number__current-value' v-if='currentValue !== null'>
+      <div 
+        v-if='currentValue !== null'
+        :style='transitionDuration'
+        class='v-number__animated v-number__current-value' 
+      >
         {{ currentValue }}
       </div>
     </transition>
     <transition name='v-number-new-value'>
-      <div class='v-number__animated v-number__new-value' v-if='newValue !== null'>
+      <div 
+        v-if='newValue !== null'
+        :style='transitionDuration'
+        class='v-number__animated v-number__new-value' 
+      >
         {{ newValue }}
       </div>
     </transition>
@@ -26,14 +34,14 @@ export default {
     value: {
       required: true,
       validator(value) {
-        return !isNaN(Number(value))
+        return !isNaN(value)
       }
     },
 
     // Animation speed
     speed: {
       type: Number,
-      default: 1000,
+      default: 500,
     }
   },
 
@@ -67,14 +75,17 @@ export default {
     this.currentValue = this.value
   },
 
-  methods: {
-  },
+  computed: {
+    transitionDuration() {
+      return {
+        transitionDuration: this.speed + 'ms'
+      }
+    }
+  }
 }
 </script>
 
 <style lang='scss' scoped>
-$speed: 1s;
-
 .v-number {
   overflow: hidden;
   position: relative;
@@ -90,6 +101,8 @@ $speed: 1s;
 
   &__animated {
     position: absolute;
+    transition-property: top;
+    transition-timing-function: ease-in-out;
   }
 
   &-new-value {
@@ -100,10 +113,6 @@ $speed: 1s;
         top: 0;
       }
     }
-
-    &-enter-active {
-      transition: $speed;
-    }
   }
 
   &-current-value {
@@ -113,10 +122,6 @@ $speed: 1s;
       &-to {
         top: -100%;
       }
-    }
-
-    &-leave-active {
-      transition: $speed;
     }
   }
 }
