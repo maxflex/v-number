@@ -1,14 +1,23 @@
 {
-  "name": "v-number",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@maxflex/v-number",
+  "version": "1.0.0",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name v-number ./src/index.js",
     "lint": "vue-cli-service lint"
   },
+  "main": "./dist/v-number.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "dependencies": {
     "core-js": "^2.6.5",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
