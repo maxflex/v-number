@@ -1,6 +1,6 @@
 {
   "name": "@maxflex/v-number",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name v-number ./src/index.js",
