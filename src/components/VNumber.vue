@@ -24,7 +24,10 @@ export default {
 
   props: {
     value: {
-      required: true
+      required: true,
+      validator(value) {
+        return !isNaN(Number(value))
+      }
     },
 
     // Animation speed
