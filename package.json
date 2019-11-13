@@ -1,6 +1,20 @@
 {
   "name": "@maxflex/v-number",
-  "version": "1.0.7",
+  "version": "1.0.9",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue3",
+    "vue-transition",
+    "vue-animation",
+    "vue-component",
+    "number-transition",
+    "number-animation"
+  ],
+  "author": "Max Kolyadin",
+  "license": "MIT",
+  "homepage": "https://maxflex.github.io/v-number/",
+  "description": "Animated number transition library for Vue.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name v-number ./src/index.js",
