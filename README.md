@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/maxflex/v-number/master/public/img/logo.png" width="120">
+  <img src="https://raw.githubusercontent.com/maxflex/v-number/master/docs/img/logo.png" width="120">
 </p>
 
 # V-Number
@@ -9,7 +9,7 @@ Simple lightweight library for smooth horizontal number transitions
 
 [LIVE DEMO](https://maxflex.github.io/v-number/)
 
-<img src="https://raw.githubusercontent.com/maxflex/v-number/master/public/img/preview.gif">
+<img src="https://raw.githubusercontent.com/maxflex/v-number/master/docs/img/preview.gif">
 
 ## Installation
 ```
