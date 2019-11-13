@@ -6,7 +6,7 @@
         <h1 class='header__title'>Number</h1>
       </div>
       <h2 style='text-align: center'>
-        Smooth number transitions library for Vue.js
+        Animated number transition library for Vue.js
       </h2>
       <v-number class='v-number' :value='number' />
     </div>
