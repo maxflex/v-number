@@ -4,6 +4,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name v-number ./src/index.js",
+    "build-docs": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "main": "./dist/v-number.common.js",
