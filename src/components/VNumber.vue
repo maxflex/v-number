@@ -107,7 +107,7 @@ export default {
 
   &-new-value {
     &-enter {
-      top: 100%;
+      top: -100%;
 
       &-to {
         top: 0;
@@ -120,7 +120,7 @@ export default {
       top: 0;
 
       &-to {
-        top: -100%;
+        top: 100%;
       }
     }
   }
