@@ -2,7 +2,7 @@
   <div class='app'>
     <div>
       <div class='header'>
-        <img class='header__logo' src='/img/logo.png'/>
+        <img class='header__logo' src='img/logo.png'/>
         <h1 class='header__title'>Number</h1>
       </div>
       <h2 style='text-align: center'>
