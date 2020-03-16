@@ -1,6 +1,6 @@
 {
   "name": "@maxflex/v-number",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "keywords": [
     "vue",
     "vuejs",
@@ -9,7 +9,10 @@
     "vue-animation",
     "vue-component",
     "number-transition",
-    "number-animation"
+    "number-animation",
+    "likes-counter",
+    "vue-likes-counter",
+    "like-animation"
   ],
   "author": "Max Kolyadin",
   "license": "MIT",
